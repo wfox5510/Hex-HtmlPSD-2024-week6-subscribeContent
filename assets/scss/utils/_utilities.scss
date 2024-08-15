@@ -1,0 +1,17 @@
+$utilities: map-merge(
+  $utilities, (
+    "font-size": map-merge(
+      map-get($utilities, "font-size"),
+      ( responsive: true ),
+    ),
+  )
+);
+
+.letter-spacing{
+  &-5{
+    letter-spacing: 0.05em;
+  }
+  &-10{
+    letter-spacing: 0.1em;
+  }
+}
