@@ -3,6 +3,7 @@
 }
 body{
   box-sizing: border-box;
+  background-color: $primary-100;
 }
 h1,
 h2,
@@ -19,5 +20,6 @@ p {
 }
 
 .bi::before{
-  display: block;
+  display: inline-block;
+  vertical-align: -10%;
 }

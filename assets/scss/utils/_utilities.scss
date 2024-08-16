@@ -7,6 +7,12 @@ $utilities: map-merge(
   )
 );
 
+.img{
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .letter-spacing{
   &-5{
     letter-spacing: 0.05em;

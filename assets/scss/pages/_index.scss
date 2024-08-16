@@ -1,3 +1,21 @@
-.nav-form{
+.nav-form {
   width: 276px;
+}
+
+.banner .container {
+  padding-right: 0px;
+  padding-left: 0px;
+  @include media-breakpoint-up(sm) {
+    padding-right: calc(var(--bs-gutter-x)* 0.5);
+    padding-left: calc(var(--bs-gutter-x)* 0.5);
+  }
+}
+
+.banner-title {
+  width: 100%;
+  bottom: 0%;
+  @include media-breakpoint-up(lg) {
+    bottom: 50%;
+    transform: translateY(50%);
+  }
 }

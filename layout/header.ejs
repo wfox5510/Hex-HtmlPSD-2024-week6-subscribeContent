@@ -1,40 +1,47 @@
 <header>
-  <div class="collapse navbar-collapse d-lg-none fixed-top" id="navbarSupportedContent">
+  <div class="collapse navbar-collapse d-lg-none fixed-top p-0" id="navbarSupportedContent">
     <div class="vh-100 vw-100 bg-primary-100 ">
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <button class="navbar-toggler border-0 p-4 bg-danger ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      </nav>
-      <form class="d-flex me-auto nav-form mx-auto">
-        <input class="form-control border-end-0 border-neutral-200 rounded-start-pill letter-spacing-5" type="search" placeholder="搜尋文章" aria-label="Search">
-        <button class="btn border border-start-0 border-neutral-200 rounded-0 rounded-end-pill align-middle" type="submit"><i class="bi bi-search text-success fs-4"></i></button>
-      </form>
-      <ul class="navbar-nav gap-4 mb-2 mb-lg-0 fw-bold align-items-center">
-        <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="#">所有文章</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">訂閱方案</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">關於我們</a>
-        </li>
-        <li class="nav-item">
-          <button class="btn btn-accent-200 text-neutral-white fw-medium">登入 / 註冊</button>
-        </li>
-      </ul>
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light py-3 px-2 mb-2">
+          <button class="navbar-toggler border-0 ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-x fs-2"></i>
+          </button>
+        </nav>
+        <form class="d-flex me-auto nav-form mb-5 w-100">
+          <input class="form-control border-end-0 border-neutral-200 rounded-start-pill letter-spacing-5" type="search" placeholder="搜尋文章" aria-label="Search">
+          <button class="btn border border-start-0 border-neutral-200 rounded-0 rounded-end-pill align-middle" type="submit"><i class="bi bi-search text-success fs-4"></i></button>
+        </form>
+        <ul class="navbar-nav gap-5 mb-2 mb-lg-0 fw-bold align-items-start">
+          <li class="nav-item">
+            <a class="nav-link px-2" aria-current="page" href="#">所有文章</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-2" href="#">訂閱方案</a>
+          </li>
+          <li class="nav-item px-2 mb-3">
+            <a class="nav-link" href="#">關於我們</a>
+          </li>
+          <li class="nav-item w-100">
+            <button class="btn btn-accent-200 text-neutral-white fw-medium w-100">登入 / 註冊</button>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
   <div class="container">
     <nav class="navbar navbar-expand-lg navbar-light">
-      <div class="container-fluid">
-        <a class="navbar-brand me-7" href="#"><img src="../assets/img/logo.svg" alt="logo"></a>
+      <div class="container-fluid py-3 py-lg-7 px-0 border-bottom border-neutral-300">
+        <a class="navbar-brand me-7" href="#">
+          <picture class="d-block">
+            <source media="(min-width: 992px)" srcset="../assets/img/logo.svg">
+            <img src="../assets/img/logo-sm.svg" alt="logo" class="d-block">
+          </picture>
+        </a>
         <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse bg-danger d-none d-lg-block" id="navbarSupportedContent">
-          <form class="d-flex me-auto nav-form mx-auto">
+        <div class="collapse navbar-collapse d-none d-lg-block" id="navbarSupportedContent">
+          <form class="d-flex me-auto nav-form">
             <input class="form-control border-end-0 border-neutral-200 rounded-start-pill letter-spacing-5" type="search" placeholder="搜尋文章" aria-label="Search">
             <button class="btn border border-start-0 border-neutral-200 rounded-0 rounded-end-pill align-middle" type="submit"><i class="bi bi-search text-success fs-4"></i></button>
           </form>
