@@ -19,3 +19,46 @@
     transform: translateY(50%);
   }
 }
+
+.theme-card{
+  position: relative;
+  .card-img{
+    width: 100%;
+  }
+  h3{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+  }
+  &::before{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0%;
+    border-radius: 20px 0px;
+    transition: 0.5s;
+  }
+  &:hover::before{ 
+    background: rgba($color: #212529, $alpha: 0.4);
+  }
+}
+
+.swiper {
+
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
