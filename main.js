@@ -2,12 +2,14 @@ import './assets/scss/all.scss';
 import 'bootstrap/dist/js/bootstrap.min.js';
 
 var swiper = new Swiper(".mySwiper", {
+  spaceBetween: 48, 
   breakpoints: {
-    576: {
+    992: {
       slidesPerView: 2,
       slidesPerGroup: 2,
     },
   },
+  
   renderFraction: function (currentClass, totalClass) {
     return '<span class="' + currentClass + '"></span>' +
       ' of ' +

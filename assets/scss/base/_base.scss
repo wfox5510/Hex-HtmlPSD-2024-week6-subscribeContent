@@ -18,8 +18,7 @@ a {
 p {
   letter-spacing: 0.05em;
 }
-
-.bi::before{
+.bi{
   display: inline-block;
-  vertical-align: -10%;
+  line-height: 0;
 }

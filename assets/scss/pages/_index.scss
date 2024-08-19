@@ -2,9 +2,10 @@
   width: 276px;
 }
 
-.banner .container {
+.banner>.container {
   padding-right: 0px;
   padding-left: 0px;
+
   @include media-breakpoint-up(sm) {
     padding-right: calc(var(--bs-gutter-x)* 0.5);
     padding-left: calc(var(--bs-gutter-x)* 0.5);
@@ -14,51 +15,71 @@
 .banner-title {
   width: 100%;
   bottom: 0%;
+
   @include media-breakpoint-up(lg) {
     bottom: 50%;
     transform: translateY(50%);
   }
 }
 
-.theme-card{
+.theme-card {
   position: relative;
-  .card-img{
+
+  .card-img {
     width: 100%;
   }
-  h3{
+
+  h3 {
     position: absolute;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
   }
-  &::before{
+
+  &::before {
     content: "";
     display: block;
     width: 100%;
     height: 100%;
     position: absolute;
-    top:0%;
+    top: 0%;
     border-radius: 20px 0px;
     transition: 0.5s;
   }
-  &:hover::before{ 
+
+  &:hover::before {
     background: rgba($color: #212529, $alpha: 0.4);
   }
 }
 
-.swiper {
 
-}
 
-.swiper-slide {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.activity{
+  ul::before,ul::after{
+    content: "";
+    position: absolute;
+  }
+  ul::before{
+    @include media-breakpoint-up(lg) {
+      bottom: -90px;
+      left: 0%;
+      width: 217px;
+      height: 81px;
+      background-image: url("../img/bg-1.png");
+    }
+  }
+  ul::after{
+    bottom: -56px;
+    right: -50px;
+    width: 160px;
+    height: 104px;
+    background-image: url("../img/bg-2-sm.png");
+    @include media-breakpoint-up(lg) {
+      bottom: -96px;
+      right: 0%;
+      width: 300px;
+      height: 196px;
+      background-image: url("../img/bg-2.png");
+    }
+  }
 }

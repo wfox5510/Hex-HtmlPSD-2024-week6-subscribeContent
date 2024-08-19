@@ -38,7 +38,7 @@
     </section>
     <section class="py-9 py-lg-11">
       <div class="container">
-        <h2 class="mb-5">熱門主題</h2>
+        <h2 class="mb-5 fs-4 fs-lg-2">熱門主題</h2>
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-1 g-md-5">
           <div class="col">
             <div class="theme-card">
@@ -123,20 +123,25 @@
         </div>
       </div>
     </section>
-    <section>
+    <!-- swiper輪播 卡片高度需修改 限制P標籤文字數量-->
+    <!-- RWD 分頁按鈕跟標題排版需修改 -->
+    <section class="py-9 py-lg-11">
       <div class="container">
         <div class="row position-relative">
-          <div class="col-md-4">
-            <h3 class="fs-2">精選文章</h3>
-  
-         
-              <div class="swiper-prev d-inline-block px-3 py-1 border border-1 border-dark rounded-5 "><i
-                  class="bi bi-arrow-left fs-4"></i></div>
-              <div class="swiper-next d-inline-block px-3 py-1 border border-1 border-dark rounded-5"><i
-                  class="bi bi-arrow-right fs-4"></i></div>
-              <div class="swiper-pagination position-absolute"></div>    
+          <div class="col-md-4 d-flex flex-column">
+            <h3 class="fs-2 mb-auto fs-4 fs-lg-2">精選文章</h3>
+            <div class="swiper-custom">
+              <div class="swiper-pagination"></div>
+              <div class="navigation text-neutral-400">
+                <div class="swiper-prev border border-1 border-neutral-400 rounded-5 "><i
+                    class="bi bi-arrow-left fs-4"></i></div>
+                <hr>
+                <div class="swiper-next border border-1 border-neutral-400 rounded-5"><i
+                    class="bi bi-arrow-right fs-4"></i></div>
+              </div>
+            </div>
           </div>
-          <div class="swiper mySwiper col-md-8">
+          <div class="swiper mySwiper col-md-8 mb-3">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <div class="card border-0 border-bottom border-dark">
@@ -145,22 +150,87 @@
                     <img src="../assets/img/articles-1-sm.png" alt="articles-img" class="rounded-1">
                   </picture>
                   <div class="card-body py-5">
-                    <h3 class="mb-1">私人島嶼的露營奇遇記</h3>
+                    <h3 class="mb-1  fs-5">私人島嶼的露營奇遇記</h3>
                     <p class="card-text mb-5">
                       遠離塵囂,用全新的眼光重塑生活的舒適本味。徜徉在環山綠野間,在這處隱世私家別墅裡,盡情領略池畔優閒時光,任林間微風撫面,聆聽花鳥嘶啞之音,重拾內心深處的寧靜安詳...</p>
                     <a href="#" class="fs-5 fw-medium font-family-Newsreader text-accent-200">Read More</a>
                   </div>
                 </div>
               </div>
-              <div class="swiper-slide">Slide 2</div>
-              <div class="swiper-slide">Slide 2</div>
-              <div class="swiper-slide">Slide 2</div>
+              <div class="swiper-slide">
+                <div class="card border-0 border-bottom border-dark">
+                  <picture>
+                    <source media="(min-width:768px )" srcset="../assets/img/articles-2.png">
+                    <img src="../assets/img/articles-2-sm.png" alt="articles-img" class="rounded-1">
+                  </picture>
+                  <div class="card-body py-5">
+                    <h3 class="mb-1 fs-5">窺探米其林三星主廚的絕密手藝</h3>
+                    <p class="card-text mb-5">
+                      在這間隱世餐廳,來一場味蕾與靈魂的盛宴。幽微燈火下,透過巨匠大師的獨門料理,領略食材中蘊藏的大自然馨香脈絡。營造只屬於你我的私密小宇宙,沉浸其中,品嘗人生至臻至美的風味...</p>
+                    <a href="#" class="fs-5 fw-medium font-family-Newsreader text-accent-200">Read More</a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card border-0 border-bottom border-dark">
+                  <picture>
+                    <source media="(min-width:768px )" srcset="../assets/img/articles-1.png">
+                    <img src="../assets/img/articles-1-sm.png" alt="articles-img" class="rounded-1">
+                  </picture>
+                  <div class="card-body py-5">
+                    <h3 class="mb-1  fs-5">私人島嶼的露營奇遇記</h3>
+                    <p class="card-text mb-5">
+                      遠離塵囂,用全新的眼光重塑生活的舒適本味。徜徉在環山綠野間,在這處隱世私家別墅裡,盡情領略池畔優閒時光,任林間微風撫面,聆聽花鳥嘶啞之音,重拾內心深處的寧靜安詳...</p>
+                    <a href="#" class="fs-5 fw-medium font-family-Newsreader text-accent-200">Read More</a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card border-0 border-bottom border-dark">
+                  <picture>
+                    <source media="(min-width:768px )" srcset="../assets/img/articles-2.png">
+                    <img src="../assets/img/articles-2-sm.png" alt="articles-img" class="rounded-1">
+                  </picture>
+                  <div class="card-body py-5">
+                    <h3 class="mb-1 fs-5">窺探米其林三星主廚的絕密手藝</h3>
+                    <p class="card-text mb-5">
+                      在這間隱世餐廳,來一場味蕾與靈魂的盛宴。幽微燈火下,透過巨匠大師的獨門料理,領略食材中蘊藏的大自然馨香脈絡。營造只屬於你我的私密小宇宙,沉浸其中,品嘗人生至臻至美的風味...</p>
+                    <a href="#" class="fs-5 fw-medium font-family-Newsreader text-accent-200">Read More</a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card border-0 border-bottom border-dark">
+                  <picture>
+                    <source media="(min-width:768px )" srcset="../assets/img/articles-1.png">
+                    <img src="../assets/img/articles-1-sm.png" alt="articles-img" class="rounded-1">
+                  </picture>
+                  <div class="card-body py-5">
+                    <h3 class="mb-1  fs-5">私人島嶼的露營奇遇記</h3>
+                    <p class="card-text mb-5">
+                      遠離塵囂,用全新的眼光重塑生活的舒適本味。徜徉在環山綠野間,在這處隱世私家別墅裡,盡情領略池畔優閒時光,任林間微風撫面,聆聽花鳥嘶啞之音,重拾內心深處的寧靜安詳...</p>
+                    <a href="#" class="fs-5 fw-medium font-family-Newsreader text-accent-200">Read More</a>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="swiper-button-next position-absolute "></div>
-            <div class="swiper-button-prev position-absolute"></div>
-            
           </div>
         </div>
+      </div>
+    </section>
+    <section class="activity py-9 py-lg-11  overflow-hidden ">
+      <div class="container position-relative d-flex flex-column align-items-center">
+        <h2 class="mb-5 fs-4 fs-lg-2"><span class="d-block mb-2 fs-6 fs-lg-4 text-center text-accent-200 text-lg-primary-400">\ 母親節強檔活動 /</span>
+          家庭訂閱方案限時7折</h2>
+        <ul class="list-unstyled text-neutral-400 d-flex flex-column gap-3 mb-8">
+          <li><i class="bi bi-check fs-4 me-2"></i>每月最新文章無限閱讀</li>
+          <li><i class="bi bi-check fs-4 me-2"></i>專屬會員限定內容</li>
+          <li><i class="bi bi-check fs-4 me-2"></i>定期電子報</li>
+          <li><i class="bi bi-check fs-4 me-2"></i>年度精選禮物</li>
+          <li><i class="bi bi-check fs-4 me-2"></i>24 /7 優先客戶服務</li>
+          <li><i class="bi bi-check fs-4 me-2"></i>為每個成員量身打造專屬行程</li>
+        </ul>
+        <button class="btn btn-accent-200 text-neutral-white">我想了解</button>
       </div>
     </section>
 
