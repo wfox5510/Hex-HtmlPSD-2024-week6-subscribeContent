@@ -56,3 +56,10 @@ $utilities: map-merge(
   font-family: "Newsreader",serif;
 }
 
+.text-truncate{
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1; // 行數
+  -webkit-box-orient: vertical;
+  white-space: normal;
+}
