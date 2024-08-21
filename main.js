@@ -1,5 +1,12 @@
 import './assets/scss/all.scss';
 import 'bootstrap/dist/js/bootstrap.min.js';
+// 參考 https://codepen.io/lpla/pen/wvqMvML 做出兩個斷點的paganation
+var DoublePaganation = new Swiper(".mySwiper", {
+  pagination: {
+    el: '.swiper-pagination2',
+    type: "fraction",
+  },
+})
 
 var swiper = new Swiper(".mySwiper", {
   spaceBetween: 48, 
@@ -9,14 +16,8 @@ var swiper = new Swiper(".mySwiper", {
       slidesPerGroup: 2,
     },
   },
-  
-  renderFraction: function (currentClass, totalClass) {
-    return '<span class="' + currentClass + '"></span>' +
-      ' of ' +
-      '<span class="' + totalClass + '"></span>';
-  },
   pagination: {
-    el: ".swiper-pagination",
+    el: '.swiper-pagination',
     type: "fraction",
   },
   navigation: {
@@ -24,3 +25,5 @@ var swiper = new Swiper(".mySwiper", {
     prevEl: ".swiper-prev",
   },
 });
+
+swiper.controller.control = DoublePaganation;
