@@ -96,5 +96,10 @@
     -webkit-line-clamp: 4; // 行數
     -webkit-box-orient: vertical;
     white-space: normal;
+.hot{
+  .nav-link{
+    width: 100%;
+    padding: 16px;
+    text-align: left;
   }
 }
