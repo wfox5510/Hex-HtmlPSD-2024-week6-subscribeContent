@@ -1,27 +1,29 @@
-.swiper-custom {
-  .swiper-pagination {
-    position: relative;
-    text-align: start;
-    margin-bottom: 32px;
-    display: flex;
-    gap: 10px;
+.swiper-pagination {
+  position: relative;
+  text-align: start;
+  margin-bottom: 32px;
+  display: flex;
+  gap: 10px;
+}
+
+.navigation {
+  display: flex;
+  gap: 20px;
+
+  .swiper-prev,
+  .swiper-next {
+    display: block;
+    padding: 4px 16px;
   }
-
-  .navigation {
-    display: flex;
-    gap: 20px;
-
-    .swiper-prev,
-    .swiper-next {
-      display: block;
-      padding: 4px 16px;
-    }
-
-    hr {
-      width: 80px;
-      border-top-color: $neutral-400;
-      opacity: 1;
-    }
+  .swiper-prev:hover,
+  .swiper-next:hover{
+    background-color: $accent-200;
+    color: $neutral-white
+  }
+  hr {
+    width: 80px;
+    border-top-color: $neutral-400;
+    opacity: 1;
   }
 }
 
