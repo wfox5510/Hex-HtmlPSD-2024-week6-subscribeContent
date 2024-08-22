@@ -44,9 +44,9 @@ var hotsSwiper = new Swiper(".hots-swiper", {
 });
 
 const projectSwiper = new Swiper(".project-swiper", {
-  slidesPerView: 2,
-  grid: {
-    fill: 'column',
-    rows: 2,
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+    },
   },
 });

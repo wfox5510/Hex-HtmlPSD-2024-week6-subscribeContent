@@ -116,3 +116,12 @@
     text-align: left;
   }
 }
+
+.card-project{
+  .card-title{
+    padding: 8px 12px;
+    position: absolute;
+    top: 0%;
+    transform: translateY(-50%);
+  }
+}
