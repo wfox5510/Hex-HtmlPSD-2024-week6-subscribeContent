@@ -12,6 +12,10 @@ $utilities: map-merge(
       map-get($utilities, "color"),
       ( responsive: true ),
     ),
+    "border-top": map-merge(
+      map-get($utilities, "border-top"),
+      ( responsive: true ),
+    ),
     "rounded-top-left": (
       property: border-top-left-radius,
       class: rounded-top-left,
