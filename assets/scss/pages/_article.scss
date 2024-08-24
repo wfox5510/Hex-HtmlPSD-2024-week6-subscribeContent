@@ -1,0 +1,15 @@
+.article-link-list{
+  li>a::after{
+    content: '/';
+    display: inline-block;
+    margin-left: 4px;
+    margin-right: 4px;
+  }
+  li:last-child>a::after{
+    display: none;
+  }
+  .active{
+    color: $accent-200 !important;
+  }
+}
+

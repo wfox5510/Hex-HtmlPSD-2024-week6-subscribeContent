@@ -1,69 +1,67 @@
-$utilities: map-merge(
-  $utilities, (
-    "font-size": map-merge(
-      map-get($utilities, "font-size"),
-      ( responsive: true ),
-    ),
-    "font-weight": map-merge(
-      map-get($utilities, "font-weight"),
-      ( responsive: true ),
-    ),
-    "color": map-merge(
-      map-get($utilities, "color"),
-      ( responsive: true ),
-    ),
-    "border-top": map-merge(
-      map-get($utilities, "border-top"),
-      ( responsive: true ),
-    ),
-    "rounded-top-left": (
-      property: border-top-left-radius,
-      class: rounded-top-left,
-      values: (
-        1: $border-radius,
-        2: $border-radius-sm,
-        3: $border-radius-lg,
-        4: $border-radius-xl,
-        5: $border-radius-xxl,
+$utilities: map-merge($utilities, ("font-size": map-merge(map-get($utilities, "font-size"),
+        (responsive: true),
       ),
-    ),
-    "rounded-bottom-right": (
-      property: border-bottom-right-radius,
-      class: rounded-bottom-right,
-      values: (
-        1: $border-radius,
-        2: $border-radius-sm,
-        3: $border-radius-lg,
-        4: $border-radius-xl,
-        5: $border-radius-xxl,
+      "font-weight": map-merge(map-get($utilities, "font-weight"),
+        (responsive: true),
       ),
-    ),
-  )
-);
+      "color": map-merge(map-get($utilities, "color"),
+        (responsive: true),
+      ),
+      "border-top": map-merge(map-get($utilities, "border-top"),
+        (responsive: true),
+      ),
+      "rounded-top-left": (property: border-top-left-radius,
+        class: rounded-top-left,
+        values: (1: $border-radius,
+          2: $border-radius-sm,
+          3: $border-radius-lg,
+          4: $border-radius-xl,
+          5: $border-radius-xxl,
+        ),
+      ),
+      "rounded-bottom-right": (property: border-bottom-right-radius,
+        class: rounded-bottom-right,
+        values: (1: $border-radius,
+          2: $border-radius-sm,
+          3: $border-radius-lg,
+          4: $border-radius-xl,
+          5: $border-radius-xxl,
+        ),
+      ),
+    ));
 
-.img{
+.img {
   display: block;
   max-width: 100%;
   height: auto;
 }
 
-.letter-spacing{
-  &-5{
+.letter-spacing {
+  &-5 {
     letter-spacing: 0.05em;
   }
-  &-10{
+
+  &-10 {
     letter-spacing: 0.1em;
   }
 }
 
-.font-family-Newsreader{
-  font-family: "Newsreader",serif;
+.font-family-Newsreader {
+  font-family: "Newsreader", serif;
 }
 
-.text-truncate{
+.text-truncate {
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 1; // 行數
   -webkit-box-orient: vertical;
   white-space: normal;
+
+  &-2 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2 ;// 行數
+    -webkit-box-orient: vertical;
+    white-space: normal;
+  }
 }
