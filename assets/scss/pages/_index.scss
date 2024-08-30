@@ -15,7 +15,6 @@
 .banner-title {
   width: 100%;
   bottom: 0%;
-
   @include media-breakpoint-up(lg) {
     bottom: 50%;
     transform: translateY(50%);
